@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "325723386617",
+    "project_id": "file-vault-a2db5",
+    "storage_bucket": "file-vault-a2db5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325723386617:android:8da211ca2e4062db8be828",
+        "android_client_info": {
+          "package_name": "com.example.file_vault"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325723386617-6f71a6ck506e9noie3hk1kslafprh0bb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA74krJVzbKzqcxn3hHzQN_KGFLr-Ar6as"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325723386617-6f71a6ck506e9noie3hk1kslafprh0bb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "325723386617-qduno8vdvoa54qeg9n1rvsb7785qqi73.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fileVault"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
