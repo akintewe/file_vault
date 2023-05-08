@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
 class FileScreen extends StatefulWidget {
   final PlatformFile file;
@@ -18,6 +19,8 @@ class _FileScreenState extends State<FileScreen> {
   @override
   void initState() {
     super.initState();
+
+    // Convert the PlatformFile to a File object
     _file = File(widget.file.path!);
   }
 
@@ -25,23 +28,13 @@ class _FileScreenState extends State<FileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.file.name),
+        title: Text('PDF Viewer'),
       ),
-      body: FutureBuilder(
-        future: _file.readAsBytes(),
-        builder: (context, AsyncSnapshot<List<int>> snapshot) {
-          if (snapshot.hasData) {
-            return SingleChildScrollView(
-              child: Text(
-                String.fromCharCodes(snapshot.data!),
-              ),
-            );
-          } else {
-            return Center(
-              child: CircularProgressIndicator(),
-            );
-          }
-        },
+      body: SfPdfViewer.file(
+        _file,
+        enableTextSelection: true,
+        enableDocumentLinkAnnotation: true,
+        canShowScrollHead: true,
       ),
     );
   }
