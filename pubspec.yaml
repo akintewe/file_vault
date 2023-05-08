@@ -40,6 +40,9 @@ dependencies:
   firebase_core: ^2.10.0
   firebase_auth: ^4.4.2
   google_sign_in: ^6.1.0
+  file_picker: ^5.2.11
+  syncfusion_flutter_pdf: ^21.2.3
+  syncfusion_flutter_pdfviewer: ^21.2.3
 
 dev_dependencies:
   flutter_test:
